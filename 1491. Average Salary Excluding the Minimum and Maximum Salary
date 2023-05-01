@@ -1,0 +1,11 @@
+Question link: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
+Difficulty: easy
+Related topics : array and sorting
+Asked in : amazon , netsuite
+C++ Code:
+      class Solution {
+      public:
+          double average(vector<int>& s) {
+              return (accumulate(s.begin(),s.end(),0)-*max_element(s.begin(),s.end())-*min_element(s.begin(),s.end()))/(double)(s.size()-2);
+          }
+      };
