@@ -1,7 +1,7 @@
     public int maxVowels(String s, int k) {
         int ans = 0;
         // Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
-        var vowels = Set.of('a', 'e', 'i', 'o', 'u'); // Java 11 Collection factory method, credit to @Sithis
+        var vowels = Set.of('a', 'e', 'i', 'o', 'u'); // Java 11 Collection factory method
         for (int i = 0, winCnt = 0; i < s.length(); ++i) {
             if (vowels.contains(s.charAt(i))) {
                 ++winCnt; 
